@@ -1,0 +1,250 @@
+:root {
+    --header: rgb(164, 196, 226);
+    --highlightblue: #067c76;
+    --white: #ffff;
+    --black: black; 
+    --gruppo: 'gruppo';
+    --licorice: 'licorice';
+    --Fred: 'Fredericka the Great';
+    --Bhu: 'BhuTuka Expanded One';
+    --Microbe: 'Rubik Microbe'
+}
+
+/*
+ALTERNATIVE COLOR SCHEME
+    --header: #067c76;
+    --backgroundblue: rgb(164, 196, 226);
+    --white: #ffff;
+    --black: black; 
+    --gruppo: 'gruppo';
+    --licorice: 'licorice';
+*/
+
+body {
+    background-color: var(--white); 
+    margin: 0;
+}
+
+
+/* ALL LINKS */
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--highlightblue);
+}
+
+
+/* ALL PARAGRAPHS */
+p {
+    font-size: 20px;
+    color: var(--black);
+    text-align: center;
+    font-family: var(--gruppo);
+    font-weight: bold;
+    line-height: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p a:hover{
+    color: var(--highlightblue);
+}
+
+
+
+
+
+/* HEADER */
+.header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header);
+    color: var(--white);
+}
+
+.header h1 {
+    margin: 15px;
+    display: inline-block;
+    font-family: var(--Bhu);
+    font-size: 84px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.header nav {
+    margin-right: 20px;
+    margin-top: 20px;
+    float: right;
+    font-family: var(--gruppo);
+    font-size: 30px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+.nav a:hover{
+    color: var(--highlightblue);
+}
+
+
+
+
+/* MAIN PHOTO */
+.main-photo {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/IMG_6706.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1.0;
+}
+
+
+/*MAIN PHOTO HOVER - turned off for now */
+/*
+.main-photo:hover {
+    opacity: .5;
+}
+*/
+
+
+
+/* OVERLAY WELCOME / h2 HEADER */
+h2 {
+    padding-top: 6%;
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--gruppo);
+}
+
+
+
+
+
+/* ABOUT ME / MAIN PARAGRAPH */
+.about-me p {
+    font-size: 20px;
+    color: var(--black);
+    text-align: center;
+    font-family: var(--gruppo);
+    font-weight: bold;
+    line-height: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-me a{
+    color: var(--header)
+}
+
+
+
+
+/*MY PHOTO HOVER - turned off for now*/
+.myphoto:hover {
+    opacity: 1.0;
+}
+
+
+
+
+/*BACK TO TOP LINKS */
+.back-to-top {
+    padding: 10px;
+    text-align:center;
+    font-family: var(--gruppo);
+    font-size: 16px;
+}
+
+.back-to-top a{
+    color: var(--black);
+}
+
+.back-to-top a:hover{
+    color: var(--highlightblue);
+}
+
+
+
+/* 
+.images >img {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images-container{
+    width: 300px;
+    height:370px;
+}
+*/
+
+
+
+/* WORK IMAGES */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.images-container img {  
+    padding: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/* CONTACT ME */
+.contact-me {
+    text-align: absolute;
+    list-style-position: inside;
+    font-size: 20px;
+    line-height: 120%;
+    width: auto;
+    font-family: var(--gruppo);
+    background-color: var(--header);
+}
+
+.contact {
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+    font-family: var(--gruppo);
+    text-align: center;
+    margin: 10px;
+}
+
